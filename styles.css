@@ -1,6 +1,11 @@
 
     /* font montserrat */
     @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 :root{
 
@@ -22,3 +27,81 @@
 h1 {
     font-family: var(--primary-font);
 }
+
+body {
+    background-color: #272100;
+}
+h2 {
+    font-size: 37px;
+}
+
+.logo-monkey {
+border:2px solid red;
+margin-right: 4rem;
+margin-top: 1rem;
+}
+
+.monkey {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo {
+    margin-right: 0.5rem;
+}
+
+.mail{
+    color:#98ff98;
+}
+
+div1 {
+    color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10rem 2rem ;
+}
+.input-container {
+    position: relative;
+    
+  }
+
+.input-container input {
+  background-color:#ededed ;
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: 0.80rem;
+  line-height: 1.25rem;
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 #070700;
+  
+  margin: 10rem 1rem 1rem;
+}
+.input-container span {
+    display: grid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    place-content: center;
+  }
+  
+  .input-container span svg {
+    color: #9CA3AF;
+    width: 1rem;
+    height: 1rem;
+    margin: 10rem 1rem 1rem;
+    
+  }
+  button {
+    font-size: 37px;
+    background-color:#98ff98 ;
+    color:#070700;
+    margin: auto;
+    border-radius: 10px;
+  }
+ 
