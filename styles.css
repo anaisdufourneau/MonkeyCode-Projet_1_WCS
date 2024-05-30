@@ -31,34 +31,21 @@
 
 /*  SECTION GENERAL */
 
-.monkey-jauge {
-    width: 100%;
-    margin: 16px;
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
+.monkey-jauge{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-top:2rem;
 }
 
-    float: center;
+.logo-monkey{
+    grid-column: 2 / 3;
+    margin: auto;
 }
 
-.logojauge {
-    float: right;
-} */
-
-body>main>.monkey-jauge {
-   
-}
-
-.monkey-jauge>.logo-monkey {
-    
-}
-
-.monkey-jauge>.logojauge {
-   
-
-}
+.logojauge{
+    justify-self: flex-end;
+    padding-right: 2rem;
+} 
 
 
 /* SECTION ANAIS  */
