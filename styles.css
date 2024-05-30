@@ -7,6 +7,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 :root {
@@ -48,6 +49,18 @@
     padding-right: 2rem;
 }
 
+h1 {
+    font-size: clamp(1.5rem, 8.5vw, 2rem);
+    font-family: var(--secondary-font);
+}
+
+h1 > span{
+    color: var(--secondary-color);
+}
+p{
+    font-family: var(--primary-font);
+}
+
 
 /* SECTION ANAIS  */
 
@@ -56,14 +69,6 @@ body {
     background-color: #272100;
 
 }
-
-h1 {
-    font-size: 2rem;
-    font-family: var(--secondary-font);
-    margin-inline-start: 1rem;
-
-}
-
 
 .mail {
     color: #98ff98;
@@ -127,7 +132,7 @@ h1 {
     margin-left: 1.2rem;
 }
 
-button:hover {
+/* button:hover {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
 }
 
@@ -137,4 +142,84 @@ button:active {
 
 button:focus {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+} */
+
+
+/* SECTION LOGIN ALEX */
+
+.main{
+    height: 70vh;
+    width: 85vw;
+    margin: 2rem auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
 }
+
+#logoLogin{
+    height: 10em;
+    width: 11em;
+}
+
+.title{
+     margin-bottom: -1vh; 
+}
+#connectAccount{
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+#connectAccount div:first-child{
+    border-bottom: 1px solid #FFF;
+}
+.connect{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2vh;
+    padding: 3vh 0 2vh 0;
+}
+
+#signGoogleApple{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+#btn-creatAccount{
+    background-color: var(--grey-color);
+    height: 3.5rem;
+    border-radius: 8px;
+    font: bold 1rem var(--primary-font);
+    
+}
+#btn-login{
+    background-color: var(--secondary-color);
+    height: 3.5rem;
+    border-radius: 8px;
+    font: bold 1rem var(--primary-font);
+}
+
+
+footer{
+    position: absolute;
+    width: 90%;
+    margin: auto 5% 0 5%;
+    bottom: 2vh;
+    font-family: var(--secondary-font);
+    font-size: 0.5rem;
+    color: var(--grey-color);
+    text-align: center;
+    
+}
+footer > a{
+    color: var(--grey-color);
+} 
+
