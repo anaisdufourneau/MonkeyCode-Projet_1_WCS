@@ -31,33 +31,21 @@
 
 /*  SECTION GENERAL */
 
-.monkey-jauge {
-    width: 100%;
-    margin: 16px;
-    display: flex;
 
-    justify-content: space-between;
-    align-items: center;
+.monkey-jauge{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-top:2rem;
 }
-
-    float: center;
-}
-
-.logojauge {
-    float: right;
-} */
-
-body>main>.monkey-jauge {
-   
-}
-
-.monkey-jauge>.logo-monkey {
     
+.logo-monkey{
+    grid-column: 2 / 3;
+    margin: auto;
 }
-
-.monkey-jauge>.logojauge {
-   
-
+    
+.logojauge{
+    justify-self: flex-end;
+    padding-right: 2rem;
 }
 
 
