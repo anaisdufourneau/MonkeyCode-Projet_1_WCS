@@ -28,13 +28,32 @@
     --secondary-font: "Jua", sans-serif;/* font-title  */
 
 }
+/*  SECTION GENERAL */
+
+/* .monkey-jauge{
+    width: 100%;
+     margin: 16px; 
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.logo-monkey{
+    float: center;
+}
+
+.logojauge{
+    float: right;
+}
 
 
-
+/* SECTION ANAIS  */
 
 
 body {
     background-color: #272100;
+    
 }
 
 h1 {
@@ -44,29 +63,13 @@ h1 {
 
 }
 
-.logo-monkey {
-
-    margin-right: 4rem;
-    margin-top: 1rem;
-}
-
-.monkey-jauge {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.logojauge {
-    margin-right: 0.5rem;
-}
 
 .mail {
     color: #98ff98;
 
 }
 
-div1 {
+.container {
     color: #ededed;
     display: flex;
     flex-direction: column;
