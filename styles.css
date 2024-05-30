@@ -39,12 +39,25 @@
     align-items: center;
 } */
 
-.logo-monkey{
+/* .logo-monkey{
     float: center;
 }
 
 .logojauge{
     float: right;
+} */
+
+body>main>.monkey-jauge {
+   
+}
+
+.monkey-jauge>.logo-monkey {
+    
+}
+
+.monkey-jauge>.logojauge {
+   
+
 }
 
 
@@ -57,7 +70,7 @@ body {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 2rem;
     font-family: var(--secondary-font);
     margin-inline-start: 1rem;
 
