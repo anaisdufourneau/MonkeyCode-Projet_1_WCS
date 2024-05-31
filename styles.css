@@ -32,18 +32,19 @@
 
 /*  SECTION GENERAL */
 
-.monkey-jauge{
+.monkey-jauge {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    margin-top:2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+
 }
-    
-.logo-monkey{
+
+.logo-monkey {
     grid-column: 2 / 3;
     margin: auto;
 }
-    
-.logojauge{
+
+.logojauge {
     justify-self: flex-end;
     padding-right: 2rem;
 
@@ -55,12 +56,15 @@ h1 {
     font-family: var(--secondary-font);
 }
 
-h1 > span{
+h1>span {
     color: var(--secondary-color);
+
 }
-p{
+
+p {
     font-family: var(--primary-font);
 }
+
 .btn-confirm {
     width: 350px;
     height: 50px;
@@ -74,41 +78,69 @@ p{
     position: fixed;
     bottom: 1rem;
 
+
 }
 
 /* SECTION ANAIS  */
 
 
 body {
-    background-color: #272100;
+    background-color: var(--primary-color);
 
-    
+
 }
 
 h1 {
     font-size: 35px;
     font-family: var(--secondary-font);
+
     margin-inline-start: 1rem;
     width: 18rem;
     height: 8rem;
     margin-bottom: 3svh;
 
+
 }
 
 .mail {
-    color: #98ff98;
+    color: var(--secondary-color);
 
 }
 
-.container {
-    color: #ededed;
+.main {
+    height: 70vh;
+    width: 85vw;
+    margin: 2rem auto auto auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 4rem;
-    margin-right: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 6rem;
 }
 
+
+
+.container {
+    color: var(--grey-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+input {
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+    font-size: var(--primary-font);
+    font-size: 16px;
+    padding-left: 1rem;
+
+}
 
 
 .container input {
@@ -135,6 +167,7 @@ h1 {
   }
   */
 
+
 div.container {
     display: flex;
     flex-direction: column;
@@ -143,16 +176,33 @@ div.container {
 }
 
 .btn-confirm {
-    width: 350px;
-    height: 50px;
+
+    margin: auto;
+    
+    text-align: center;
+    cursor: pointer;
+    width: 85%;
+    height: 3.5rem;
+    position: fixed;
+    bottom: 1rem;
     background-color: var(--secondary-color);
     font-family: var(--primary-font);
+    font-size: 16px;
+    color: var(--dark-color);
     font-weight: 600;
+
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
     color: #070700;
     border-radius: 8px;
     font-size: 16px;
-    position: fixed;
-    bottom: 1rem;
+   
+
 
 }
 
@@ -189,7 +239,7 @@ footer {
 
 /* SECTION LOGIN ALEX */
 
-.main{
+.main {
     height: 70vh;
     width: 85vw;
     margin: 2rem auto auto auto;
@@ -200,26 +250,29 @@ footer {
     gap: 5%;
 }
 
-#logoLogin{
+#logoLogin {
     height: 10em;
     width: 11em;
 }
 
-.title{
-     margin-bottom: -1vh; 
+.title {
+    margin-bottom: -1vh;
 }
-#connectAccount{
+
+#connectAccount {
     width: 100%;
     margin-top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
+
 }
-#connectAccount div:first-child{
+
+#connectAccount div:first-child {
     border-bottom: 1px solid #FFF;
 }
-.connect{
+
+.connect {
     height: fit-content;
     width: 100%;
     display: flex;
@@ -229,20 +282,21 @@ footer {
     padding: 3vh 0 2vh 0;
 }
 
-#signGoogleApple{
+#signGoogleApple {
     display: flex;
     align-items: center;
     gap: 3%;
 }
 
-#btn-creatAccount{
+#btn-creatAccount {
     background-color: var(--grey-color);
     height: 3.5rem;
     border-radius: 8px;
     font: bold 1rem var(--primary-font);
-    
+
 }
-#btn-login{
+
+#btn-login {
     background-color: var(--secondary-color);
     height: 3.5rem;
     border-radius: 8px;
@@ -250,7 +304,7 @@ footer {
 }
 
 
-#footerLogIn{
+#footerLogIn {
     position: absolute;
     width: 90%;
     margin: auto 5% 0 5%;
@@ -259,8 +313,9 @@ footer {
     font-size: 0.5rem;
     color: var(--grey-color);
     text-align: center;
-    
+
 }
-#footerLogIn > a{
+
+#footerLogIn>a {
     color: var(--grey-color);
-} 
+}
