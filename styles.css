@@ -32,6 +32,7 @@
 
 /*  SECTION GENERAL */
 
+<<<<<<< HEAD
 .monkey-jauge {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,16 +41,32 @@
 }
 
 .logo-monkey {
+=======
+.monkey-jauge{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-top:2rem;
+}
+
+.logo-monkey{
+>>>>>>> alex-branch
     grid-column: 2 / 3;
     margin: auto;
 }
 
+<<<<<<< HEAD
 .logojauge {
     justify-self: flex-end;
     padding-right: 2rem;
 
 
 }
+=======
+.logojauge{
+    justify-self: flex-end;
+    padding-right: 2rem;
+} 
+>>>>>>> alex-branch
 
 h1 {
     font-size: clamp(1.5rem, 8.5vw, 2rem);
