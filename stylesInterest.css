@@ -29,6 +29,10 @@
 body{
     background-color: var(--primary-color);
 }
+p{
+    font-family: var(--primary-font);
+    color: var(--grey-color);
+}
 
 
 /*  Logo */
@@ -49,15 +53,50 @@ body{
     padding-right: 2rem;
 }
 
+/* TITRE H1 H2 */ 
+
+h1 {
+    font-size: clamp(1.5rem, 8.5vw, 2rem);
+    font-family: var(--secondary-font);
+    color: var(--grey-color);
+    width: 65%;
+}
+h1 > span{
+    color: var(--secondary-color);
+}
+h2{
+    font-family: var(--primary-font);
+    color: var(--grey-color);
+    font-size: 1rem;
+    margin-bottom: 2vh;
+}
+
+/* MAIN PAGE */
+
+main{
+    height: auto;
+    width: 85%;
+    margin: 2rem auto auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 6rem;
+    bottom: 2vh;
+}
+
+/* LISTE LANGUAGE */
+
 ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;  
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.4rem;  
 }
 
 ul > li{
-    height: 5.5rem;
-    width: 5.5rem;
+    height: 4.8rem;
+    width: 5.3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -66,34 +105,28 @@ ul > li{
     border-radius: 23px;
     color: var(--grey-color);
     cursor: pointer;
+    font-size: 0.8em;
 }
-
-/* ul > li:hover{
-    background-color: #fff;
-}
-
-ul > li:active{
-    background-color: #fff;
-} */
-
-
-
 
 footer {
-    display: flex;
+    position: fixed;
+    height: 5.5rem;
+    width: 100vw;
+    display: none;
     justify-content: center;
     color: #070700;
     border-radius: 8px;
     font-size: 16px;
-    display: none;
     transition: 0.5;
+    background-color: var(--primary-color);
+    padding-top: 1rem;
+    bottom: 0;
 }
 
 .btn-confirm {
     text-align: center;
     width: 85%;
     height: 3.5rem;
-    position: fixed;
     bottom: 1rem;
     background-color: var(--secondary-color);
     font-family: var(--primary-font);
