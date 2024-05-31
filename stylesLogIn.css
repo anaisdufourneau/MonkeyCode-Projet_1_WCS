@@ -148,8 +148,7 @@ p{
     font-family: var(--secondary-font);
     font-size: 0.5rem;
     color: var(--grey-color);
-    text-align: center;
-    
+    text-align: center;   
 }
 #footerLogIn > a{
     color: var(--grey-color);

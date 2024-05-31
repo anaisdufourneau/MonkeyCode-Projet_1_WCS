@@ -51,7 +51,8 @@ body{
 
 ul{
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    gap: 0.8rem;  
 }
 
 ul > li{
@@ -67,13 +68,13 @@ ul > li{
     cursor: pointer;
 }
 
-ul > li:hover{
+/* ul > li:hover{
     background-color: #fff;
 }
 
 ul > li:active{
     background-color: #fff;
-}
+} */
 
 
 
