@@ -51,49 +51,81 @@
 
 
 body {
-    background-color: #272100;
+    background-color: var(--primary-color);
 
 }
 
 h1 {
     font-size: 35px;
     font-family: var(--secondary-font);
-    margin-inline-start: 1rem;
+    
 
 }
 
 
 .mail {
-    color: #98ff98;
+    color: var(--secondary-color);
 
 }
 
-.container {
-    color: #ededed;
+.main{
+    height: 70vh;
+    width: 85vw;
+    margin: 2rem auto auto auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 4rem;
-    margin-right: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 6rem;
 }
 
+
+.container {
+    color: var(--grey-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  
+}
+
+input {
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+    font-size:var(--primary-font);
+    font-size: 16px;
+    padding-left: 1rem;
+
+}
 
 
 .btn-confirm {
-   
+    margin: auto;
+    position: fixed;
+    bottom: 1rem;
+    text-align: center;
     cursor: pointer;
-    width: 80%;
+    width: 85%;
+    height: 3.5rem;
     background-color: var(--secondary-color);
     border-radius: 8px;
     transition: all 0.2s ease;
     font-family: var(--primary-font);
     font-size: 16px ;
-    color: #070700;
-    text-shadow: 0 1px #fff;
-    margin-top: 2rem;
+    color: var(--dark-color);
+    font-weight: 600;
 
 }
-    
+   
+footer {
+    display: flex;
+    justify-content: center;
+
+}
 
 button:hover {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
