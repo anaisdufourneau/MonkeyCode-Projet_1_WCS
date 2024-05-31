@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <main class="container">
-        <img src="Images/logoWithSlogan.png" alt="Logo with a slogan">
+    <main class="main">
+        <img id="logoLogin" src="Images/logoWithSlogan.png" alt="Logo with a slogan">
 
-        <div class="title"><h1>Join a community to level <span>up</span>!</h1></div>
-        <section>
+        <section class="container">
+            <div class="title"><h1>Join a community to level <span>up</span> !</h1></div>
+            <div id="connectAccount">    
+                <div class="connect">
+                    <button id="btn-creatAccount" type="button">Creat account</button>
+                    <div id="signGoogleApple"><p>Sign up with</p><img src="Images/google.png"><img src="Images/apple.png"></div>
+                </div>
 
-            <div>
-                <button type="button">Creat account</button>
-                <div><p>Sign up with</p><img><img></div>
+                <div class="connect">
+                    <p>Already have an account ?</p>
+                    <button id="btn-login" type="button">Login</button>
+                </div>
             </div>
-
-            <div>
-                <p>Already have an account ?</p>
-                <button class="btn" type="button"></button>
-            </div>
-
         </section>
-
-        <div><a>DOWNLOAD THE MONKEY CODE APP</a> - <a>ACCESSIBILITY</a> - 
-            <a>PRIVACY POLICY</a>  -  <a>BLOG</a>  -  
-            <a>HELP CENTER</a>  -  <a>ADVERTISING</a>  -  
-            <a>MARKETING</a>  -  <a>COOKIE POLICY</a>  -  
-            <a>©2024 DONKEY_CODE CORP</a>
-        </div>
-
     </main>
+        <footer><a href="#">DOWNLOAD THE MONKEY CODE APP</a> - <a href="#">ACCESSIBILITY</a> - 
+            <a href="#">PRIVACY POLICY</a>  -  <a href="#">BLOG</a>  -  
+            <a href="#">HELP CENTER</a>  -  <a href="#">ADVERTISING</a>  -  
+            <a href="#">MARKETING</a>  -  <a href="#">COOKIE POLICY</a>  -  
+            <a href="#">©2024 DONKEY_CODE CORP</a>
+        </footer>
 </body>
 </html>

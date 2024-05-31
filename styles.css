@@ -1,7 +1,5 @@
-
-
-    /* font jua-be vietnam pro*/
-    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jua&display=swap');
+/* font jua-be vietnam pro*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jua&display=swap');
 
 
 
@@ -9,6 +7,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 :root {
@@ -24,10 +23,13 @@
 
     /* font */
 
-    --primary-font:"Be Vietnam Pro",sans-serif;/*font-paragraphe*/
-    --secondary-font: "Jua", sans-serif;/* font-title  */
+    --primary-font: "Be Vietnam Pro", sans-serif;
+    /*font-paragraphe*/
+    --secondary-font: "Jua", sans-serif;
+    /* font-title  */
 
 }
+
 /*  SECTION GENERAL */
 
 .monkey-jauge{
@@ -35,15 +37,43 @@
     grid-template-columns: 1fr 1fr 1fr ;
     margin-top:2rem;
 }
-
+    
 .logo-monkey{
     grid-column: 2 / 3;
     margin: auto;
 }
-
+    
 .logojauge{
     justify-self: flex-end;
     padding-right: 2rem;
+
+
+}
+
+h1 {
+    font-size: clamp(1.5rem, 8.5vw, 2rem);
+    font-family: var(--secondary-font);
+}
+
+h1 > span{
+    color: var(--secondary-color);
+}
+p{
+    font-family: var(--primary-font);
+}
+.btn-confirm {
+    width: 350px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border: 1px solid #79ec79;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: #070700;
+    border-radius: 8px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 1rem;
+
 }
 
 /* SECTION ANAIS  */
@@ -51,6 +81,7 @@
 
 body {
     background-color: #272100;
+
     
 }
 
@@ -61,8 +92,8 @@ h1 {
     width: 18rem;
     height: 8rem;
     margin-bottom: 3svh;
-}
 
+}
 
 .mail {
     color: #98ff98;
@@ -93,6 +124,7 @@ h1 {
     /* margin: 6rem 3rem 12rem; */
 }
 
+
 /* }
   button {
     
@@ -121,10 +153,10 @@ div.container {
     font-size: 16px;
     position: fixed;
     bottom: 1rem;
+
 }
 
-
-button:hover {
+/* button:hover {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
 }
 
@@ -134,6 +166,7 @@ button:active {
 
 button:focus {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+
 }
 
 body>main>#id-container {
@@ -150,3 +183,84 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+} */
+
+
+/* SECTION LOGIN ALEX */
+
+.main{
+    height: 70vh;
+    width: 85vw;
+    margin: 2rem auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+#logoLogin{
+    height: 10em;
+    width: 11em;
+}
+
+.title{
+     margin-bottom: -1vh; 
+}
+#connectAccount{
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+#connectAccount div:first-child{
+    border-bottom: 1px solid #FFF;
+}
+.connect{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2vh;
+    padding: 3vh 0 2vh 0;
+}
+
+#signGoogleApple{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+#btn-creatAccount{
+    background-color: var(--grey-color);
+    height: 3.5rem;
+    border-radius: 8px;
+    font: bold 1rem var(--primary-font);
+    
+}
+#btn-login{
+    background-color: var(--secondary-color);
+    height: 3.5rem;
+    border-radius: 8px;
+    font: bold 1rem var(--primary-font);
+}
+
+
+#footerLogIn{
+    position: absolute;
+    width: 90%;
+    margin: auto 5% 0 5%;
+    bottom: 2vh;
+    font-family: var(--secondary-font);
+    font-size: 0.5rem;
+    color: var(--grey-color);
+    text-align: center;
+    
+}
+#footerLogIn > a{
+    color: var(--grey-color);
+} 
