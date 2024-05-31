@@ -31,7 +31,7 @@
 
 }
 
-/*  SECTION GENERAL */
+/* SECTION ANAIS  */
 
 .monkey-jauge {
     display: grid;
@@ -52,55 +52,14 @@
 
 }
 
+body {
+    background-color: var(--primary-color);
+}
+
 h1 {
     font-size: clamp(1.5rem, 8.5vw, 2rem);
     font-family: var(--secondary-font);
-}
-
-h1>span {
-    color: var(--secondary-color);
-
-}
-
-p {
-    font-family: var(--primary-font);
-}
-
-.btn-confirm {
-    width: 350px;
-    height: 50px;
-    background-color: var(--secondary-color);
-    border: 1px solid #79ec79;
-    font-family: var(--primary-font);
-    font-weight: 600;
-    color: #070700;
-    border-radius: 8px;
-    font-size: 16px;
-    position: fixed;
-    bottom: 1rem;
-
-
-}
-
-/* SECTION ANAIS  */
-
-
-body {
-    background-color: var(--primary-color);
-
-
-}
-
-h1 {
-    font-size: 35px;
-    font-family: var(--secondary-font);
-
-    margin-inline-start: 1rem;
-    width: 18rem;
-    height: 8rem;
-    margin-bottom: 3svh;
-
-
+    width: 60%;
 }
 
 .mail {
@@ -118,70 +77,25 @@ h1 {
     justify-content: space-between;
     gap: 5%;
     margin-top: 6rem;
-}
-
-
-
-.container {
     color: var(--grey-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
 }
 
 input {
-    display: flex;
     width: 100%;
     height: 3.5rem;
     border-radius: 8px;
     margin-top: 3rem;
-    font-size: var(--primary-font);
+    font-family: var(--primary-font);
     font-size: 16px;
     padding-left: 1rem;
 
 }
 
 
-.container input {
-    background-color: #ededed;
-    padding: 1rem;
-    padding-right: 3rem;
-    font-size: 1rem;
-    width: 100%;
-    height: 3.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 2px 0 #070700;
-
-    /* margin: 6rem 3rem 12rem; */
-}
-
-
-/* }
-  button {
-    
-    background-color:#98ff98 ;
-    color:#070700;
-    margin: auto;
-    border-radius: 10px;
-  }
-  */
-
-
-div.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
-}
-
 .btn-confirm {
 
     margin: auto;
-    
     text-align: center;
-    cursor: pointer;
     width: 85%;
     height: 3.5rem;
     position: fixed;
@@ -191,8 +105,7 @@ div.container {
     font-size: 16px;
     color: var(--dark-color);
     font-weight: 600;
-
-
+    border-radius: 8px;
 }
 
 footer {
@@ -202,121 +115,10 @@ footer {
     color: #070700;
     border-radius: 8px;
     font-size: 16px;
-   
-
-
 }
 
-/* button:hover {
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
-}
 
-button:active {
+/* button:focus {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-}
-
-button:focus {
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-
-}
-
-body>main>#id-container {
-    color: #ededed;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 8em;
-    margin-left: 1rem;
-    gap : 2rem;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
 } */
 
-
-/* SECTION LOGIN ALEX */
-
-.main {
-    height: 70vh;
-    width: 85vw;
-    margin: 2rem auto auto auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5%;
-}
-
-#logoLogin {
-    height: 10em;
-    width: 11em;
-}
-
-.title {
-    margin-bottom: -1vh;
-}
-
-#connectAccount {
-    width: 100%;
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-#connectAccount div:first-child {
-    border-bottom: 1px solid #FFF;
-}
-
-.connect {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 2vh;
-    padding: 3vh 0 2vh 0;
-}
-
-#signGoogleApple {
-    display: flex;
-    align-items: center;
-    gap: 3%;
-}
-
-#btn-creatAccount {
-    background-color: var(--grey-color);
-    height: 3.5rem;
-    border-radius: 8px;
-    font: bold 1rem var(--primary-font);
-
-}
-
-#btn-login {
-    background-color: var(--secondary-color);
-    height: 3.5rem;
-    border-radius: 8px;
-    font: bold 1rem var(--primary-font);
-}
-
-
-#footerLogIn {
-    position: absolute;
-    width: 90%;
-    margin: auto 5% 0 5%;
-    bottom: 2vh;
-    font-family: var(--secondary-font);
-    font-size: 0.5rem;
-    color: var(--grey-color);
-    text-align: center;
-
-}
-
-#footerLogIn>a {
-    color: var(--grey-color);
-}
