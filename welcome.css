@@ -83,8 +83,8 @@ h1 {
 }
 /*c'est ok*/
 .btn-confirm {
-    width: 350px;
-    height: 50px;
+    width: 85%;
+    height: 3.5rem;
     background-color: var(--secondary-color);
     font-family: var(--primary-font);
     font-weight: 600;
