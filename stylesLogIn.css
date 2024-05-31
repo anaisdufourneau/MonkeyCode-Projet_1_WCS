@@ -32,6 +32,9 @@
 
 /*  SECTION GENERAL */
 
+body{
+    background-color: var(--primary-color);
+}
 
 .monkey-jauge{
     display: grid;
@@ -52,6 +55,7 @@
 h1 {
     font-size: clamp(1.5rem, 8.5vw, 2rem);
     font-family: var(--secondary-font);
+    color: var(--grey-color);
 }
 
 h1 > span{
@@ -59,6 +63,7 @@ h1 > span{
 }
 p{
     font-family: var(--primary-font);
+    color: var(--grey-color);
 }
 .btn-confirm {
     width: 350px;
