@@ -32,6 +32,7 @@
 body {
     background-color: var(--grey-color);
 }
+
 nav {
     display: flex;
     flex-direction: column;
@@ -49,14 +50,28 @@ nav>.top_nav {
 nav>.top_nav>li>.Menu_burger {
     width: 2rem;
 }
+
 nav>.top_nav>li>.Profil {
     width: 2rem;
     height: 2rem;
 }
+
+.solide {
+    border-top: 2px solid #000000;
+    width: 80%;
+    margin: 0 10%;
+ }
 
 nav>.bottom_nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 1rem;
+}
+
+.solid {
+    border-top: 1rem solid #000000;
+    border-bottom: 1rem solid #000000;
+    
+    
 }
