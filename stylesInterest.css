@@ -89,9 +89,10 @@ main{
 ul{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    gap: 0.4rem;  
+    gap: 1.6rem;
+    margin-bottom: 5.5rem;  
 }
 
 ul > li{
