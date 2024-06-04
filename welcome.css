@@ -103,3 +103,12 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+
+@media screen and (min-width: 992px){
+    .logojauge{
+        display: none;
+    }
+    
+}
+    
