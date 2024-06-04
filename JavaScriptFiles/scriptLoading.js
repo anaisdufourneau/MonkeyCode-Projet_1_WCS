@@ -10,7 +10,7 @@ let animation = bodymovin.loadAnimation({
 })
 
 function redirect(){
-    document.location.href="password.html";
+    document.location.href="Wall.html";
 }
 
 setTimeout(redirect, 4500)
