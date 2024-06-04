@@ -120,3 +120,55 @@ footer {
 /* button:focus {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 } */
+@media screen and (min-width: 992px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+    .logojauge{
+        display: none;
+    }
+    .logo-monkey{
+        height: 25rem;
+        width: 42rem;
+        padding-right: 8vw;
+        border-right: 2px solid #fff ;
+    }
+    .monkey-jauge{
+        display: block;
+    }
+    .main{
+        margin: 0;
+        padding-top: 5vh;
+        width: 30%;
+        height: auto;
+        padding-left: 8vw;
+    }
+    h1{
+        width: 90%;
+        font-size: 35px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container input {
+        width: 100%;
+    }
+    .btn-confirm {
+        width: 50%;
+        position: static;
+    }
+    footer {
+        margin-top: 8%;
+        width: 100%; 
+        justify-content: center;
+    }
+
+
+    
+}
