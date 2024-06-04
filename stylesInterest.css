@@ -95,7 +95,7 @@ ul{
     margin-bottom: 5.5rem;  
 }
 
-ul > li{
+.listeLogo{
     height: 4.8rem;
     width: 5.3rem;
     display: flex;
@@ -107,21 +107,22 @@ ul > li{
     color: var(--grey-color);
     cursor: pointer;
     font-size: 0.8em;
+    background: #272100;
 }
 
 footer {
     position: fixed;
     height: 5.5rem;
-    width: 100vw;
+    width: 100%;
     display: none;
     justify-content: center;
     color: #070700;
     border-radius: 8px;
     font-size: 16px;
-    transition: 0.5;
     background-color: var(--primary-color);
     padding-top: 1rem;
     bottom: 0;
+    left: 0;
 }
 
 .btn-confirm {
@@ -135,4 +136,63 @@ footer {
     color: var(--dark-color);
     font-weight: bold;
     border-radius: 8px;
+}
+
+@media screen and (min-width: 992px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+    .logojauge{
+        display: none;
+    }
+    .logo-monkey{
+        height: 25rem;
+        width: 42rem;
+        padding-right: 8vw;
+        border-right: 2px solid #fff ;
+    }
+    .monkey-jauge{
+        display: block;
+    }
+    main{
+        margin: 0;
+        padding-top: 5vh;
+        width: 30%;
+        height: auto;
+        padding-left: 8vw;
+        gap: 0;
+    }
+    h1{
+        width: 100%;
+        font-size: 35px;
+        margin-bottom: 2vh;
+        justify-content: flex-start;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container input {
+        width: 100%;
+    }
+    ul{
+        margin: 0;
+        width: 90%;
+        gap: 2rem;
+    }
+    .btn-confirm {
+        width: 50%;
+    }
+    footer {
+        margin-top: 8%;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        position: static;
+    }   
 }
