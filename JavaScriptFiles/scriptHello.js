@@ -9,3 +9,10 @@ if(localStorage.getItem('firstName') !== null){
 btn.addEventListener('click', () => {
     localStorage.setItem('userMail', userMailInput.value);
 })
+
+
+// Logo
+const logoMonkey = document.querySelector('.logo-monkey');
+    if (window.innerWidth >= 992) {
+        logoMonkey.src = 'Images/logoForDesktop.png';
+    } 
