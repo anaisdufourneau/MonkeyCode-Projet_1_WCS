@@ -82,3 +82,9 @@ nav>.bottom_nav {
 #logo_new_publication{
     border-right: 0px;
 }
+
+@media screen and (min-width: 992px) {
+    body {
+    background-color: var(--primary-color);
+    }
+}
