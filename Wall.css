@@ -63,15 +63,28 @@ nav>.top_nav>li>.Profil {
  }
 
 nav>.bottom_nav {
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 1rem;
 }
 
-.solid {
-    border-top: 1rem solid #000000;
-    border-bottom: 1rem solid #000000;
-    
-    
+
+
+
+.logoNav{
+    width: 25%;
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+#logo_new_publication{
+    border-right: 0px;
+}
+
+@media screen and (min-width: 992px) {
+    body {
+    background-color: var(--primary-color);
+    }
 }
