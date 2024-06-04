@@ -154,3 +154,28 @@ p{
 #footerLogIn > a{
     color: var(--grey-color);
 } 
+
+@media screen and (min-width: 992px) {
+    body {
+    background-color: var(--primary-color);
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        margin: 5rem auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #logoLogin {
+        width: 25em;
+        height: 23em;
+        border-right: 1px solid white;
+        padding-right: 3em;
+    }
+
+    .container {
+        width: 30%;
+    }
+}
