@@ -47,11 +47,11 @@ nav>.top_nav {
     justify-content: space-around;
 }
 
-nav>.top_nav>li>.Menu_burger {
+nav>.top_nav>div>.Menu_burger {
     width: 2rem;
 }
 
-nav>.top_nav>li>.Profil {
+nav>.top_nav>div>.Profil {
     width: 2rem;
     height: 2rem;
 }
@@ -69,9 +69,6 @@ nav>.bottom_nav {
     justify-content: space-around;
     margin: 1rem;
 }
-
-
-
 
 .logoNav{
     width: 25%;
