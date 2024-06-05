@@ -37,6 +37,10 @@
         display: none;
     }
 
+    .container {
+        display: none;
+    }
+
     body {
         background-color: var(--grey-color);
     }
@@ -110,7 +114,7 @@
         align-items: center;
         gap: 1rem;
     }
-   
+
     body>.Publication>.first_item>p {
         font-weight: bolder;
         font-family: var(--primary-font);
@@ -185,7 +189,7 @@
     }
 
     @media screen and (min-width: 992px) {
-        
+
         /* hidden mobile */
 
         nav {
@@ -196,12 +200,12 @@
         /* desktop */
 
         body {
-        
+
             display: flex;
             justify-content: space-between;
             height: 100svh;
         }
-    
+
         .leftAside {
             background-color: var(--grey-color);
             font-family: var(--secondary-font);
@@ -213,8 +217,9 @@
             justify-content: space-between;
             padding: 0.5em 0.5em 0 0.5em;
         }
-    
-        .eventButton, .inscriptButton {
+
+        .eventButton,
+        .inscriptButton {
             background-color: var(--primary-color);
             color: var(--secondary-color);
             font-family: var(--secondary-font);
@@ -223,19 +228,19 @@
             padding: 0.15rem;
             margin-bottom: 0.15rem;
             width: 8em;
-        } 
-    
+        }
+
         .logoDiv {
             display: flex;
             justify-content: center;
         }
-    
+
         .logo_monkey {
             height: 95px;
             width: 130px;
             margin-bottom: 2rem;
         }
-    
+
         .liveCoding {
             display: flex;
             flex-direction: column;
@@ -243,17 +248,113 @@
             align-items: center;
             height: 30%;
         }
-    
+
         .img-hackaton {
             width: 90%;
         }
-    
+
         .list {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             height: 50%;
         }
-    }
 
+        /* css Anais */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 22px;
+            width: 60%;
+            background-color: var(--grey-color);
+            padding: 1rem;
+
+        }
+
+        h1 {
+
+            font-family: var(--secondary-font);
+            font-size: 24px;
+            color: var(--dark-color);
+        }
+
+        p {
+            color: var(--dark-color);
+            font-family: var(--primary-font);
+            font-size: 16px;
+        }
+
+
+        .avatar-placeholder {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0 0 0;
+            gap: 1rem;
+        }
+
+        input {
+            border-radius: 8px;
+            border: none;
+            height: 3rem;
+            width: 550px;
+
+            text-align: center;
+        }
+
+        .button3>button {
+            border: 1.5px var(--dark-color) solid;
+            width: 3.5rem;
+            border-radius: 8px;
+            background-color: white;
+            font-weight: bold;
+            font-family: var(--primary-font);
+
+
+        }
+
+        .button3-share {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+
+        }
+
+        .button3 {
+            border-radius: 8px;
+            height: 1.5rem;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin-left: 5.6rem;
+
+        }
+
+        .share>button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            width: 6rem;
+            border-radius: 8px;
+            background-color: var(--secondary-color);
+            text-align: center;
+            font-weight: bold;
+            font-family: var(--primary-font);
+            height: 1.7rem;
+
+        }
+
+        .share {
+
+            width: 19%;
+        }
+
+        .share>button>img {
+
+            margin-right: 0.5rem;
+        }
     }
