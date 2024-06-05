@@ -150,9 +150,9 @@ footer {
         display: none;
     }
     .logo-monkey{
-        height: 25rem;
-        width: 42rem;
-        padding-right: 8vw;
+        width: 30em;
+        height: 23em;
+        padding-right: 60px;
         border-right: 2px solid #fff ;
     }
     .monkey-jauge{
@@ -161,32 +161,23 @@ footer {
     main{
         margin: 0;
         padding-top: 5vh;
-        width: 30%;
+        width: 360px;
         height: auto;
-        padding-left: 8vw;
+        padding-left: 60px;
         gap: 0;
     }
     h1{
         width: 100%;
-        font-size: 35px;
         margin-bottom: 2vh;
         justify-content: flex-start;
     }
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .container input {
-        width: 100%;
-    }
     ul{
         margin: 0;
-        width: 90%;
-        gap: 2rem;
+        width: 100%;
+        gap: 0.5rem;
     }
     .btn-confirm {
-        width: 50%;
+        width: 90%;
     }
     footer {
         margin-top: 8%;

@@ -156,26 +156,34 @@ p{
 } 
 
 @media screen and (min-width: 992px) {
-    body {
-    background-color: var(--primary-color);
-    }
-
     .main {
+        height: 100vh;
         display: flex;
         flex-direction: row;
-        margin: 5rem auto;
         width: 100%;
         justify-content: center;
+        align-items: center;
+        margin: 0;
+        gap: 0;
     }
 
     #logoLogin {
-        width: 25em;
+        width: 30em;
         height: 23em;
         border-right: 1px solid white;
-        padding-right: 3em;
+        padding-right: 60px;
     }
 
     .container {
-        width: 30%;
+        width: 360px;
+        padding-left: 60px;
     }
+
+    #footerLogIn{
+        position: fixed;
+        font-size: 1rem;
+        opacity: 0.7;
+
+    }
+ 
 }

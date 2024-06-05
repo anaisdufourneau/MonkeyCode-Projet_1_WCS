@@ -117,9 +117,9 @@ footer {
         display: none;
     }
     .logo-monkey{
-        height: 25rem;
-        width: 42rem;
-        padding-right: 8vw;
+        width: 30em;
+        height: 23em;
+        padding-right: 60px;
         border-right: 2px solid #fff ;
     }
     .monkey-jauge{
@@ -128,9 +128,9 @@ footer {
     .main{
         margin: 0;
         padding-top: 5vh;
-        width: 30%;
+        width: 360px;
         height: auto;
-        padding-left: 8vw;
+        padding-left: 60px;
     }
     h1{
         width: 100%;
@@ -145,7 +145,7 @@ footer {
         width: 100%;
     }
     .btn-confirm {
-        width: 50%;
+        width: 100%;
         position: static;
     }
     footer {
