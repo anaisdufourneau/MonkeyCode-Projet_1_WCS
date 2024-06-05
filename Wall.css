@@ -193,6 +193,7 @@
     @media screen and (min-width: 992px) {
 
         /* hidden mobile */
+        
 
         nav {
             display: none;
@@ -206,7 +207,7 @@
             max-width: 1440px;
             margin: auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             height: 100svh;
         }
 
@@ -214,12 +215,14 @@
             background-color: var(--grey-color);
             font-family: var(--secondary-font);
             color: var(--primary-color);
-            position: sticky;
-            width: 20%;
+            position: fixed;
+            height: 100vh;
+            width: calc(1440px * 0.20);
             display: flex;
             flex-direction: column;
             padding: 0.5em 1.5em 0 1.5em;
             border-right: 2px solid #fff;
+            left: 0;
         }
 
         .eventButton,
@@ -375,13 +378,15 @@
 
         .search {
             height: 100vh;
-            width: 20%;
+            width: calc(1440px * 0.20); 
             background-color: var(--grey-color);
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 1.2rem;
             border-left: 2px solid #fff;
+            position: fixed;
+            right: 0;
         }
 
         #titleSearch {
@@ -433,3 +438,5 @@
             justify-content: center;
         }
     }
+
+    
