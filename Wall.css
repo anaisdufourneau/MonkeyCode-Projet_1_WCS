@@ -357,4 +357,60 @@
 
             margin-right: 0.5rem;
         }
+
+        /* ASIDE SEARCH */
+
+        .search{
+            height: 100vh;
+            width: 20%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        
+        h2{
+            width: 65%;
+            margin: 3rem 0 0.5rem 0;
+        }
+        
+        #inputsearch{
+            width: 65%;
+            height: 2.2rem;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            padding-left: 0.5rem;
+            background-color: #f3f3f3;
+            font-size: 1rem;
+        }
+        
+        .member{
+            height: 3.5rem;
+            width: 65%;
+            background-color: #fefefe;
+            border: 2px solid #f3f3f3;
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            padding: 1.5em 1em;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        .member > div{
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+        }
+        
+        .btn-search{
+            height: 2rem;
+            width: 2rem;
+            background-color: #98ff98;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
