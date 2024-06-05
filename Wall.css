@@ -41,7 +41,7 @@
         display: none;
     }
 
-    .search{
+    .search {
         display: none;
     }
 
@@ -113,8 +113,8 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-    }    
-        
+    }
+
 
     body>section>.Publication>.first_item>.name_profil_alex {
         font-weight: bolder;
@@ -352,7 +352,7 @@
 
         .share {
 
-            width: 19%;
+            margin-left: 16rem;
         }
 
         .share>button>img {
@@ -362,7 +362,7 @@
 
         /* ASIDE SEARCH */
 
-        .search{
+        .search {
             height: 100vh;
             width: 20%;
             background-color: var(--grey-color);
@@ -372,13 +372,13 @@
             gap: 1.2rem;
             border-left: 2px solid #fff;
         }
-        
-        #titleSearch{
+
+        #titleSearch {
             width: 65%;
             margin: 3rem 0 0.5rem 0;
         }
-        
-        #inputsearch{
+
+        #inputsearch {
             width: 65%;
             height: 2.2rem;
             border-radius: 10px;
@@ -387,8 +387,8 @@
             background-color: #fff;
             font-size: 1rem;
         }
-        
-        .member{
+
+        .member {
             height: 3.5rem;
             width: 65%;
             background-color: var(--grey-color);
@@ -400,17 +400,18 @@
             justify-content: space-between;
             margin-bottom: 0.5rem;
         }
-        .member > div{
+
+        .member>div {
             display: flex;
             align-items: center;
             gap: 0.2em;
         }
 
-        .userID{
+        .userID {
             font-size: 0.8rem;
         }
-        
-        .btn-search{
+
+        .btn-search {
             height: 2rem;
             width: 2rem;
             background-color: #98ff98;
