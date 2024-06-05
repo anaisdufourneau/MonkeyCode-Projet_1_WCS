@@ -92,11 +92,7 @@
         text-align: center;
     }
 
-    #logo_new_publication {
-        border-right: 0px;
-    }
-
-    body>.Publication {
+    body>section>.Publication {
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -105,7 +101,7 @@
         margin: 0.5rem;
     }
 
-    body>.Publication>.first_item {
+    body>section>.Publication>.first_item {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -117,15 +113,16 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-    }
+    }    
+        
 
-    body>.Publication>.first_item>p {
+    body>section>.Publication>.first_item>.name_profil_alex {
         font-weight: bolder;
         font-family: var(--primary-font);
 
     }
 
-    body>.Publication>.first_item>button {
+    body>section>.Publication>.first_item>.button_add {
         background-color: var(--primary-color);
         color: var(--secondary-color);
         border-radius: 1rem;
@@ -133,7 +130,7 @@
         font-family: var(--primary-font);
     }
 
-    body>.Publication>.seconde_item {
+    body>section>.Publication>.seconde_item {
         font-weight: bold;
         font-size: 12px;
         margin: 0.5rem;
@@ -152,7 +149,7 @@
         margin: 1rem;
     }
 
-    body>.Publication>.seconde_item>.trait {
+    body>section>.Publication>.seconde_item>.trait {
         border-top: 1px solid #000000;
         width: 90%;
         margin: 1rem 10%;
