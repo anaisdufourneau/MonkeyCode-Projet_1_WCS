@@ -86,7 +86,7 @@ h1 {
     padding-left: 1rem;
 }
 /*c'est ok*/
-.btn-confirm {
+#btn-confirm {
     width: 85%;
     height: 3.5rem;
     background-color: var(--secondary-color);
@@ -144,13 +144,14 @@ footer {
     .container input {
         width: 100%;
     }
-    .btn-confirm {
+    #btn-confirm {
         width: 100%;
         position: static;
+        
     }
     footer {
         margin-top: 8%;
-        width: 100%; 
+        width: 300px; 
         justify-content: center;
     }  
 }
