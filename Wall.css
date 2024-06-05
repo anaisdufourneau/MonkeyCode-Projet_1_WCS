@@ -41,6 +41,10 @@
         display: none;
     }
 
+    .search{
+        display: none;
+    }
+
     body {
         background-color: var(--grey-color);
     }
