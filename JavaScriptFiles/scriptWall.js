@@ -20,3 +20,21 @@ btnAdd.forEach(button => {
         button.innerHTML = `&#10004`;
     });
 });
+
+// banane Like
+
+const banane = document.querySelectorAll('.bananeToggle');
+const countLike = document.querySelectorAll('.countLike');
+
+banane.forEach(image => {
+    image.addEventListener('click', () => {
+        image.src = 'Images/bananeYellow.png';
+        countLike[0].innerHTML = (countLike[0].innerHTML *1) + 1;
+    });
+});
+
+
+
+
+
+// console.log((countLike[0].innerHTML *1) + 1)
