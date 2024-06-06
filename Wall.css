@@ -358,6 +358,10 @@
             display: none;
         }
 
+        .countLike{
+            font-size: 0.7rem;
+        }
+
 
         /* desktop */
 
