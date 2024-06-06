@@ -40,3 +40,21 @@ const banane = document.querySelectorAll('.bananeToggle');
         }
     });
  });
+
+
+
+ // toggle new article 
+
+
+ const newArticle = document.querySelector('#nouvelle_article');
+ const closeNewArticle = document.querySelector('#article_close');
+ const divArticle = document.querySelector('#new_article');
+
+ newArticle.addEventListener("click", () => {
+    divArticle.style.display = "flex";
+ }) 
+
+ closeNewArticle.addEventListener("click" , () => {
+    divArticle.style.display = "none";
+ })
+ 

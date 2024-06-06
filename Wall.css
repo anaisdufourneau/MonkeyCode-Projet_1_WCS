@@ -31,17 +31,101 @@
 
     }
 
+    /*div new article*/
+
+    #new_article {
+
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        backdrop-filter: blur(6px);
+                display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input_div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--grey-color);
+        width: 80%;
+        height: 80%;
+        border-radius: 22px;
+        gap: 10%;
+
+    }
+
+    .descriptionjeyfrey {
+        border-radius: 22px;
+        height: 30%;
+        width: 80%;
+        padding: 16px;
+        border: none;
+    }
+
+    .descriptionjeyfrey::placeholder {
+        text-align: center;
+    }
+
+
+
+    #image {
+        border-radius: 22px;
+        height: 5%;
+        width: 80%;
+        padding: 16px;
+        border: none;
+    }
+
+    #image::placeholder {
+        text-align: center;
+        margin: auto;
+    }
+
+    #article_close {
+        font-size: 3.5rem;
+    }
+
+    #buttn_article {
+
+        text-align: center;
+        width: 80%;
+        height: 2.5rem;
+        border: none;
+        background-color: var(--secondary-color);
+        font-family: var(--primary-font);
+        font-size: 16px;
+        color: var(--dark-color);
+        font-weight: 600;
+        border-radius: 22px;
+    }
+
+    .article_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        align-items: center;
+        font-family: var(--secondary-font);
+    }
+
+
+
+
     /* Mobile nav toggle */
 
-    #nav-toggle-mobile{
+    #nav-toggle-mobile {
         position: absolute;
         height: 100vh;
         width: 100%;
         backdrop-filter: blur(6px);
         transition: 1s;
-        left: -150%;  
+        left: -150%;
     }
-    #logoToggleX{
+
+    #logoToggleX {
         height: 2rem;
         width: 2rem;
         color: var(--dark-color);
@@ -52,7 +136,8 @@
         font-size: 3.5rem;
         opacity: 0.8;
     }
-    #div-toggle{
+
+    #div-toggle {
         height: 100vh;
         width: 70%;
         background-color: #f5f5f5;
@@ -61,39 +146,48 @@
         padding: 1.5rem 2rem 1.5rem 2rem;
         border-right: 1px solid var(--dark-color)
     }
-    #profil-toggle{
+
+    #profil-toggle {
         height: 30vh;
         border-bottom: 2px solid var(--dark-color);
         line-height: 1.6rem;
     }
-    #profil-toggle > img{
+
+    #profil-toggle>img {
         height: 4rem;
         width: 4rem;
     }
-    #profil-toggle > p{
+
+    #profil-toggle>p {
         font-family: var(--secondary-font);
         font-weight: bold;
     }
-    #ul-toggle{
+
+    #ul-toggle {
         height: 60vh;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .li-toggle{
+
+    .li-toggle {
         font-family: var(--secondary-font);
     }
-    .li-toggle > a{
+
+    .li-toggle>a {
         color: var(--dark-color);
         font-size: 1.3rem;
     }
-    #liSpecial{
+
+    #liSpecial {
         color: #db0000;
     }
-    #btnToggle{
+
+    #btnToggle {
         height: 2.5rem;
         width: 5rem;
     }
+
     /* FIN Mobile nav toggle */
 
     /* hidden desktop */
@@ -258,7 +352,7 @@
     @media screen and (min-width: 992px) {
 
         /* hidden mobile */
-        
+
 
         nav {
             display: none;
@@ -301,7 +395,8 @@
             margin-bottom: 0.15rem;
             width: 8em;
         }
-        .eventButton{
+
+        .eventButton {
             align-self: flex-start;
             margin: 0 0 -1rem 1rem;
             opacity: 0.8;
@@ -366,9 +461,10 @@
             font-size: 16px;
         }
 
-        .seconde_item > p{
+        .seconde_item>p {
             width: 100%;
         }
+
         .avatar-placeholder {
             display: flex;
             align-items: center;
@@ -376,7 +472,7 @@
             gap: 1rem;
         }
 
-        input {
+        .input_desktop {
             border-radius: 8px;
             border: none;
             height: 3rem;
@@ -384,16 +480,16 @@
             padding-left: 0.5rem;
         }
 
-        .button3>button {
+        .input-anais {
             border: 1.5px var(--dark-color) solid;
             width: 3.5rem;
             border-radius: 8px;
             background-color: white;
             font-weight: bold;
             font-family: var(--primary-font);
-
-
+            text-align: center;
         }
+        
 
         .button3-share {
             display: flex;
@@ -443,7 +539,7 @@
 
         .search {
             height: 100vh;
-            width: calc(1440px * 0.20); 
+            width: calc(1440px * 0.20);
             background-color: var(--grey-color);
             display: flex;
             flex-direction: column;
@@ -503,5 +599,3 @@
             justify-content: center;
         }
     }
-
-    

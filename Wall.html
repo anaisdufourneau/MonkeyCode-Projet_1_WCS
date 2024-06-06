@@ -14,7 +14,7 @@
 <body>
     <nav id="nav-toggle-mobile">
         <div id="div-toggle">
-            <div id="logoToggleX"><span>&#215</span></div>
+            <div id="logoToggleX"><span>&#215;</span></div>
             <div id="profil-toggle">
                 <img id="picture-toggle" src="Images/picToggle.png" alt="Photo de profil">
                 <p id="userName">FirstName</p>
@@ -26,11 +26,24 @@
                 <li class="li-toggle"><a href="#">Search</a></li>
                 <li class="li-toggle"><a href="#">Profil</a></li>
                 <li class="li-toggle"><a href="#">Settings</a></li>
-                <li class="li-toggle"><a href="#">Support</a></li>              
+                <li class="li-toggle"><a href="#">Support</a></li>
             </ul>
             <img id="btnToggle" src="Images/toggleLight.png" alt="Faux boutton toggle">
         </div>
     </nav>
+    <div id="new_article">
+        <div class="input_div">
+            <div class="article_header">
+                <h2>New Article</h2>
+            <div id="article_close">&#215;</div>
+        </div>
+
+            <textarea rows="10" cols="10"  placeholder="descritpion" id="description" class="input_article descriptionjeyfrey"></textarea>
+            <input type="text" placeholder="link" id="image" class="input_article">
+            <button type="button" id="buttn_article">Share</button>
+        </div>
+
+    </div>
     <nav class="leftAside">
         <div class="logoDiv">
             <img class="logo_monkey" src="Images/BlackMonkey_Code.png" alt="Logo Monkey Code">
@@ -69,13 +82,14 @@
             <div class="logoNav" id="logo_live"><img src="Images/icone_live.png" alt="icone du live"></div>
             <div class="logoNav" id="logo_notification"><img src="Images/logo_notification.png"
                     alt="icone notification"></div>
-            <div class="logoNav" id="logo_new_publication"><img src="Images/Ajout_article.png"
+            <div class="logoNav" id="logo_new_publication"><img src="Images/Ajout_article.png" id="nouvelle_article"
                     alt="ajouter une publication"></div>
 
         </div>
 
 
     </nav>
+
     <section>
         <div class="container">
             <h1>Hello <span style="color: #98ff98;">Alex !</span></h1>
@@ -84,14 +98,14 @@
             </p>
             <div class="avatar-placeholder">
                 <img src="Images/alexpic2.png" alt="photo de profil">
-                <input type="text" placeholder="For example, a tip, recipe, quote, or achievement">
+                <input class="input_desktop" type="text" id="description" placeholder="For example, a tip, recipe, quote, or achievement">
             </div>
 
             <div class="button3-share">
                 <div class="button3">
-                    <button>Photo</button>
-                    <button>Vidéo</button>
-                    <button>Link</button>
+                    <input type="text" class="input_article input-anais" placeholder="Photo"></input>
+                    <input type="text" class="input_article input-anais" placeholder="Video"></input>
+                    <input type="text" placeholder="Link" class="input_article input-anais"></input>
                 </div>
                 <div class="share">
                     <button><img src="Images/partage.png" alt="bouton partager"> Share</button>
@@ -114,7 +128,8 @@
                 <hr class="trait">
                 <div class="button_interaction">
                     <div class="cote_gauche">
-                        <div class="Logo_article"><img src="Images/banana_logo.png" alt="logo_banane_de_like" class="bananeToggle">
+                        <div class="Logo_article"><img src="Images/banana_logo.png" alt="logo_banane_de_like"
+                                class="bananeToggle">
                             <p class="countLike">36</p>
                         </div>
                         <div class="Logo_article"><img src="Images/Speech_black.png" alt="logo_commentaire">12
@@ -145,7 +160,8 @@
                 <hr class="trait">
                 <div class="button_interaction">
                     <div class="cote_gauche">
-                        <div class="Logo_article"><img src="Images/banana_logo.png" alt="logo_banane_de_like" class="bananeToggle">
+                        <div class="Logo_article"><img src="Images/banana_logo.png" alt="logo_banane_de_like"
+                                class="bananeToggle">
                             <p class="countLike">9</p>
                         </div>
                         <div class="Logo_article"><img src="Images/Speech_black.png" alt="logo_commentaire">1
@@ -175,7 +191,8 @@
                 <hr class="trait">
                 <div class="button_interaction">
                     <div class="cote_gauche">
-                        <div class="Logo_article"><img src="Images/banana_logo.png"  alt="logo_banane_de_like" class="bananeToggle">
+                        <div class="Logo_article"><img src="Images/banana_logo.png" alt="logo_banane_de_like"
+                                class="bananeToggle">
                             <p class="countLike">9</p>
                         </div>
                         <div class="Logo_article"><img src="Images/Speech_black.png" alt="logo_commentaire">1
@@ -191,7 +208,7 @@
         </article>
     </section>
     <aside class="search">
-        <h2 id="titleSearch" >9 members online</h2>
+        <h2 id="titleSearch">9 members online</h2>
         <input id="inputsearch" type="text" placeholder="&#x1F50E;&#xFE0E;  |  Research...">
         <div class="member">
             <div>
@@ -256,8 +273,8 @@
             </div>
             <button class="btn-search" type="button"><img src="Images/paperplane.png" alt="paper Plane"></button>
         </div>
-        
-       
+
+
     </aside>
     <!-- <script src="asideLeftScript.js"></script> -->
     <script src="JavaScriptFiles/scriptWall.js"></script>
