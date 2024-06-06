@@ -13,8 +13,10 @@ toggleOpen.addEventListener('click', () => {
 
 // button add contact 
 
-const btnAdd = document.querySelector('.button_add');
+const btnAdd = document.querySelectorAll('.button_add');
 
-btnAdd.addEventListener('click', () => {
-    btnAdd.innerHTML = `&#10004`;
-})
+btnAdd.forEach(button => {
+    button.addEventListener('click', () => {
+        button.innerHTML = `&#10004`;
+    });
+});
