@@ -38,9 +38,9 @@
             <div id="article_close">&#215;</div>
         </div>
 
-            <textarea rows="10" cols="10"  placeholder="descritpion" id="description" class="input_article descriptionjeyfrey"></textarea>
-            <input type="text" placeholder="link" id="image" class="input_article">
-            <button type="button" id="buttn_article">Share</button>
+            <textarea rows="10" cols="10"  placeholder="descritpion" id="description" class="input_article descriptionjeyfrey descriptionMobile"></textarea>
+            <input type="text" placeholder="link" id="image" class="input_article liensPostMobile">
+            <button type="button" class="btn-push-postMobile" id="buttn_article">Share</button>
         </div>
 
     </div>
@@ -90,25 +90,25 @@
 
     </nav>
 
-    <section>
+    <section id="section-scroll">
         <div class="container">
-            <h1>Hello <span style="color: #98ff98;">Alex !</span></h1>
+            <h1 id="titleName">Hello <span style="color: #98ff98;">Alex !</span></h1>
             <p>
                 What would you like to share with the community today ?
             </p>
             <div class="avatar-placeholder">
                 <img src="Images/alexpic2.png" alt="photo de profil">
-                <input class="input_desktop" type="text" id="description" placeholder="For example, a tip, recipe, quote, or achievement">
+                <input class="input_desktop description" type="text" id="description" placeholder="For example, a tip, recipe, quote, or achievement">
             </div>
 
             <div class="button3-share">
                 <div class="button3">
-                    <input type="text" class="input_article input-anais" placeholder="Photo"></input>
-                    <input type="text" class="input_article input-anais" placeholder="Video"></input>
-                    <input type="text" placeholder="Link" class="input_article input-anais"></input>
+                    <input type="text" class="input_article input-anais liensPost" placeholder="Photo"></input>
+                    <input type="text" class="input_article input-anais liensPost" placeholder="Video"></input>
+                    <input type="text" placeholder="Link" class="input_article input-anais liensPost"></input>
                 </div>
                 <div class="share">
-                    <button><img src="Images/partage.png" alt="bouton partager"> Share</button>
+                    <button type="button" class="btn-push-post"><img src="Images/partage.png" alt="bouton partager"> Share</button>
                 </div>
             </div>
         </div>

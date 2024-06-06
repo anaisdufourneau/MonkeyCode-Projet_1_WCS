@@ -250,14 +250,21 @@
         border-right: 2px solid black;
         text-align: center;
     }
+    #main-article{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
 
     .Publication {
+        width: 100%;
         display: flex;
         flex-direction: column;
         background-color: white;
         border-radius: 1rem;
         padding: 0.5rem;
-        margin: 0.5rem;
+        margin: auto;
     }
 
     .Publication>.first_item {
@@ -303,7 +310,7 @@
     .image_alex {
         width: 100%;
         height: 16rem;
-        background-image: url(Images/Photo_article_Alex.png);
+        background-image: url(/Images/Photo_article_Alex.png);
         background-size: cover;
         border-radius: 1rem;
         margin: 1rem;
@@ -318,7 +325,7 @@
     .video_youtube {
         width: 100%;
         height: 16rem;
-        background-image: url(Images/photoç_youtube_david.png);
+        background-image: url(/Images/photoç_youtube_david.png);
         background-size: cover;
         border-radius: 1rem;
         margin: 1rem;
@@ -360,6 +367,9 @@
 
         .countLike{
             font-size: 0.7rem;
+        }
+        .Publication {
+            width: 52%;
         }
 
 
@@ -437,6 +447,8 @@
             flex-direction: column;
             justify-content: space-around;
             height: 50%;
+            font-size: 1.3rem;
+            margin-top: 2rem;
         }
 
         /* css Anais */
@@ -446,9 +458,10 @@
             flex-direction: column;
             align-items: flex-start;
             border-radius: 22px;
-            width: 60%;
+            width: 52%;
+            margin: auto;
             background-color: var(--grey-color);
-            padding: 1rem;
+            padding: 1rem 0 1rem 0;
 
         }
 
@@ -470,6 +483,7 @@
         }
 
         .avatar-placeholder {
+            width: 100%;
             display: flex;
             align-items: center;
             margin: 1rem 0 0 0;
@@ -500,7 +514,7 @@
             flex-direction: row;
             width: 100%;
             justify-content: space-between;
-
+            padding-left: 5.6rem;
         }
 
         .button3 {
@@ -510,8 +524,6 @@
             display: flex;
             flex-direction: row;
             gap: 1rem;
-            margin-left: 5.6rem;
-
         }
 
         .share>button {
@@ -526,17 +538,19 @@
             font-weight: bold;
             font-family: var(--primary-font);
             height: 1.7rem;
-
         }
-
-        .share {
-
-            margin-left: 16rem;
-        }
-
         .share>button>img {
 
             margin-right: 0.5rem;
+        }
+        #main-article{
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 0.5rem;
+        }
+        #section-scroll{
+            width: 100%;
         }
 
         /* ASIDE SEARCH */
@@ -603,3 +617,18 @@
             justify-content: center;
         }
     }
+
+    @media screen and (min-width: 992px) and (max-width: 1270px){
+        .search{
+            display: none;
+        }
+        #section-scroll{
+            padding-left: 20%;
+        }
+        .Publication{
+            width: 70%;
+            margin-right: 5rem;
+        }
+    }
+        
+    
