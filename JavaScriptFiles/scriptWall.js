@@ -24,17 +24,19 @@ btnAdd.forEach(button => {
 // banane Like
 
 const banane = document.querySelectorAll('.bananeToggle');
-const countLike = document.querySelectorAll('.countLike');
 
-banane.forEach(image => {
-    image.addEventListener('click', () => {
-        image.src = 'Images/bananeYellow.png';
-        countLike[0].innerHTML = (countLike[0].innerHTML *1) + 1;
+ banane.forEach(image => {
+     image.addEventListener('click', () => {
+        if(image.src.endsWith('banana_logo.png')){
+            image.src = 'Images/bananeYellow.png';
+            const logoArticle = image.closest('.Logo_article');
+            const countLike = logoArticle.querySelector('.countLike');
+            countLike.innerHTML = (countLike.innerHTML *1) + 1}
+        else{
+            image.src = "Images/banana_logo.png";
+            const logoArticle = image.closest('.Logo_article');
+            const countLike = logoArticle.querySelector('.countLike');
+            countLike.innerHTML = (countLike.innerHTML *1) - 1;
+        }
     });
-});
-
-
-
-
-
-// console.log((countLike[0].innerHTML *1) + 1)
+ });
