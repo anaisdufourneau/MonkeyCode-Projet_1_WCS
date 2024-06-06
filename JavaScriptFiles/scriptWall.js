@@ -21,6 +21,19 @@ btnAdd.forEach(button => {
     });
 });
 
+// AJOUT DU PROFIL , NAME MAIL
+
+const pUserName = document.querySelector('#userName');
+const pUserLastName = document.querySelector('#userLastName');
+const pUserMail = document.querySelector('#userMail');
+const titleName = document.querySelector('#titleName');
+
+pUserName.innerHTML = `${localStorage.getItem('firstName')}`;
+pUserLastName.innerHTML = `${localStorage.getItem('lastName')}`;
+pUserMail.innerHTML = `${localStorage.getItem('userMail')}`;
+titleName.innerHTML = `Hello <span style="color: #98ff98;">${localStorage.getItem('firstName')} !</span>`;
+
+
 // banane Like
 
 const banane = document.querySelectorAll('.bananeToggle');
@@ -59,11 +72,40 @@ const banane = document.querySelectorAll('.bananeToggle');
  })
 // END !!!!!!!!
 
+// DONNEE INPUT ET APPLICATIONS DU BOUTTON POUR NEW POST
+
+const btnNewPost = document.querySelector(".btn-push-post");
+const inputDescription = document.querySelector(".description");
+const inputImage = document.querySelectorAll(".liensPost");
+const btnNewPostMobile = document.querySelector(".btn-push-postMobile");
+const inputDescriptionMobile = document.querySelector(".descriptionMobile");
+const inputImageMobile = document.querySelector(".liensPostMobile");
+
+btnNewPost.addEventListener('click', () => {
+        localStorage.setItem('description', inputDescription.value);
+        localStorage.setItem('urlImg', inputImage.value);
+        inputDescription.value = '';
+        inputImage.forEach(image => image.value = '');
+        createArticle(localStorage.getItem('firstName'),localStorage.getItem('lastName'),localStorage.getItem('urlImg'),localStorage.getItem('description'));
+
+    });
+
+btnNewPostMobile.addEventListener('click', () => {
+        localStorage.setItem('descriptionMobile', inputDescriptionMobile.value);
+        localStorage.setItem('urlImgMobile', inputImageMobile.value);
+        divArticle.style.display = "none";
+        inputDescriptionMobile.value = '';
+        inputImageMobile.value = '';
+        createArticle(localStorage.getItem('firstName'),localStorage.getItem('lastName'),localStorage.getItem('urlImgMobile'),localStorage.getItem('descriptionMobile'));
+    });
+
+
 //   Creat new article !!!!!!!!!!!!!!!!!!!!!!!
 
 const articleArea = document.querySelector('#main-article');
 
 function createArticle(firstName, lastName, urlImage, description){
+    
     const article = document.createElement('div');
     article.classList.add('Publication');
     articleArea.appendChild(article);
@@ -81,7 +123,7 @@ function createArticle(firstName, lastName, urlImage, description){
     articleProfil.appendChild(logoProfil);
 
     const imgProfil = document.createElement('img');
-    imgProfil.src = "Images/Alex_pic.png"
+    imgProfil.src = "/Images/Alex_pic.png"
     logoProfil.appendChild(imgProfil);
 
     const pProfil = document.createElement('p');
@@ -104,7 +146,11 @@ function createArticle(firstName, lastName, urlImage, description){
 
     const imgArticle = document.createElement('div');
     imgArticle.classList.add("image_alex");
-    imgArticle.style.background = url(''); // mettre le liens du link avec local storage
+    if ( urlImage.value === undefined ){
+        imgArticle.style.backgroundImage = `url('https://lorempicture.point-sys.com/680/270/ville/')`;;
+    }else{
+    imgArticle.style.backgroundImage = `url('${urlImage}')`;
+    }
     mainArticle.appendChild(imgArticle);
 
     const trait = document.createElement('hr');
@@ -137,7 +183,7 @@ function createArticle(firstName, lastName, urlImage, description){
     gaucheDiv.appendChild(logoComm);
 
     const imgComm = document.createElement('img');
-    imgComm.src = "Images/banana_logo.png";
+    imgComm.src = "Images/Speech_black.png";
     logoComm.appendChild(imgComm);
 
     const droiteDiv = document.createElement('div');
@@ -162,6 +208,6 @@ function createArticle(firstName, lastName, urlImage, description){
 }
 
 
-// createArticle(localStorage.getItem('firstName'),localStorage.getItem('lastName'),localStorage.getItem('userLiens'))
+// createArticle(localStorage.getItem('firstName'),localStorage.getItem('lastName'),localStorage.getItem('urlImageMobile'),localStorage.getItem('descriptionMobile'))
 
  
