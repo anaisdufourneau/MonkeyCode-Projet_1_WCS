@@ -34,28 +34,6 @@ pUserMail.innerHTML = `${localStorage.getItem('userMail')}`;
 titleName.innerHTML = `Hello <span style="color: #98ff98;">${localStorage.getItem('firstName')} !</span>`;
 
 
-// banane Like
-
-const banane = document.querySelectorAll('.bananeToggle');
-
- banane.forEach(image => {
-     image.addEventListener('click', () => {
-        if(image.src.endsWith('banana_logo.png')){
-            image.src = 'Images/bananeYellow.png';
-            const logoArticle = image.closest('.Logo_article');
-            const countLike = logoArticle.querySelector('.countLike');
-            countLike.innerHTML = (countLike.innerHTML *1) + 1}
-        else{
-            image.src = "Images/banana_logo.png";
-            const logoArticle = image.closest('.Logo_article');
-            const countLike = logoArticle.querySelector('.countLike');
-            countLike.innerHTML = (countLike.innerHTML *1) - 1;
-        }
-    });
- });
-
-
-
  // toggle new article 
 
 
@@ -146,7 +124,7 @@ function createArticle(firstName, lastName, urlImage, description){
 
     const imgArticle = document.createElement('div');
     imgArticle.classList.add("image_alex");
-    if ( urlImage.value !== undefined ){
+    if ( urlImage.value === undefined ){
         imgArticle.style.backgroundImage = `url('https://lorempicture.point-sys.com/680/270/ville/')`;
     }else{
         imgArticle.style.backgroundImage = `url('${urlImage}')`;
@@ -210,4 +188,22 @@ function createArticle(firstName, lastName, urlImage, description){
 
 // createArticle(localStorage.getItem('firstName'),localStorage.getItem('lastName'),localStorage.getItem('urlImageMobile'),localStorage.getItem('descriptionMobile'))
 
- 
+
+// banane Like
+
+articleArea.addEventListener('click', (event) => {
+    if (event.target.classList.contains('bananeToggle')) {
+        const image = event.target;
+        if (image.src.endsWith('banana_logo.png')) {
+            image.src = 'Images/bananeYellow.png';
+            const logoArticle = image.closest('.Logo_article');
+            const countLike = logoArticle.querySelector('.countLike');
+            countLike.innerHTML = (countLike.innerHTML * 1) + 1;
+        } else {
+            image.src = "Images/banana_logo.png";
+            const logoArticle = image.closest('.Logo_article');
+            const countLike = logoArticle.querySelector('.countLike');
+            countLike.innerHTML = (countLike.innerHTML * 1) - 1;
+        }
+    }
+});
