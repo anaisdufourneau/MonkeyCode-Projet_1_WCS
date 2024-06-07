@@ -311,7 +311,7 @@
     .image_alex {
         width: 100%;
         height: 16rem;
-        background-image: url(/Images/Photo_article_Alex.png);
+        background-image: url(Images/Photo_article_Alex.png);
         background-size: cover;
         border-radius: 1rem;
         margin: 1rem;
@@ -326,7 +326,7 @@
     .video_youtube {
         width: 100%;
         height: 16rem;
-        background-image: url(/Images/photoç_youtube_david.png);
+        background-image: url(Images/photoç_youtube_david.png);
         background-size: cover;
         border-radius: 1rem;
         margin: 1rem;
@@ -338,7 +338,7 @@
         background-size: cover;
         border-radius: 1rem;
         margin: 1rem;
-        background-image: url(/Images/youtubeana.png);
+        background-image: url(Images/youtubeana.png);
     }
 
     .button_interaction {
