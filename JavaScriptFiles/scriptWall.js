@@ -146,10 +146,10 @@ function createArticle(firstName, lastName, urlImage, description){
 
     const imgArticle = document.createElement('div');
     imgArticle.classList.add("image_alex");
-    if ( urlImage.value === undefined ){
-        imgArticle.style.backgroundImage = `url('https://lorempicture.point-sys.com/680/270/ville/')`;;
+    if ( urlImage.value !== undefined ){
+        imgArticle.style.backgroundImage = `url('https://lorempicture.point-sys.com/680/270/ville/')`;
     }else{
-    imgArticle.style.backgroundImage = `url('${urlImage}')`;
+        imgArticle.style.backgroundImage = `url('${urlImage}')`;
     }
     mainArticle.appendChild(imgArticle);
 
