@@ -101,7 +101,7 @@ function createArticle(firstName, lastName, urlImage, description){
     articleProfil.appendChild(logoProfil);
 
     const imgProfil = document.createElement('img');
-    imgProfil.src = "/Images/Alex_pic.png"
+    imgProfil.src = "../Images/photoPost.png"
     logoProfil.appendChild(imgProfil);
 
     const pProfil = document.createElement('p');
