@@ -610,6 +610,7 @@
         .member {
             height: 3.5rem;
             width: 65%;
+            font-family: var(--primary-font);
             background-color: var(--grey-color);
             border: 2px solid #fff;
             border-radius: 22px;
