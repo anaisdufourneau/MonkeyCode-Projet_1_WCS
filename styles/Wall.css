@@ -444,9 +444,18 @@
             justify-content: space-around;
             align-items: center;
             height: 15rem;
-            padding: 1rem;
+            padding: 0.5rem;
             background-color: #fff;
             border-radius: 22px;
+        }
+
+        .liveTitle {
+            margin-top: -1rem;
+        }
+
+        #countdown {
+            font-size: 16px;
+            height: fit-content;
         }
 
         .img-hackaton {
@@ -497,6 +506,7 @@
             width: 100%;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             margin: 1rem 0 0 0;
             gap: 1rem;
         }
@@ -505,7 +515,7 @@
             border-radius: 8px;
             border: none;
             height: 3rem;
-            width: 550px;
+            width: 100%;
             padding-left: 0.5rem;
         }
 
@@ -600,6 +610,7 @@
         .member {
             height: 3.5rem;
             width: 65%;
+            font-family: var(--primary-font);
             background-color: var(--grey-color);
             border: 2px solid #fff;
             border-radius: 22px;
