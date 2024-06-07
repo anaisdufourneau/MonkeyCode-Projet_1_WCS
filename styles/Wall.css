@@ -433,9 +433,18 @@
             justify-content: space-around;
             align-items: center;
             height: 15rem;
-            padding: 1rem;
+            padding: 0.5rem;
             background-color: #fff;
             border-radius: 22px;
+        }
+
+        .liveTitle {
+            margin-top: -1rem;
+        }
+
+        #countdown {
+            font-size: 16px;
+            height: fit-content;
         }
 
         .img-hackaton {
