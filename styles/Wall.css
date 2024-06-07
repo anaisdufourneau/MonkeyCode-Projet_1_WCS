@@ -39,7 +39,7 @@
         height: 100vh;
         width: 100%;
         backdrop-filter: blur(6px);
-                display: none;
+        display: none;
         justify-content: center;
         align-items: center;
     }
@@ -250,7 +250,8 @@
         border-right: 2px solid black;
         text-align: center;
     }
-    #main-article{
+
+    #main-article {
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
@@ -331,6 +332,15 @@
         margin: 1rem;
     }
 
+    #youtubana {
+        width: 100%;
+        height: 16rem;
+        background-size: cover;
+        border-radius: 1rem;
+        margin: 1rem;
+        background-image: url(/Images/youtubeana.png);
+    }
+
     .button_interaction {
         display: flex;
         width: 100%;
@@ -365,9 +375,10 @@
             display: none;
         }
 
-        .countLike{
+        .countLike {
             font-size: 0.7rem;
         }
+
         .Publication {
             width: 52%;
         }
@@ -507,7 +518,7 @@
             font-family: var(--primary-font);
             text-align: center;
         }
-        
+
 
         .button3-share {
             display: flex;
@@ -539,17 +550,20 @@
             font-family: var(--primary-font);
             height: 1.7rem;
         }
+
         .share>button>img {
 
             margin-right: 0.5rem;
         }
-        #main-article{
+
+        #main-article {
             width: 100%;
             display: flex;
             flex-direction: column-reverse;
             gap: 0.5rem;
         }
-        #section-scroll{
+
+        #section-scroll {
             width: 100%;
         }
 
@@ -618,17 +632,17 @@
         }
     }
 
-    @media screen and (min-width: 992px) and (max-width: 1270px){
-        .search{
+    @media screen and (min-width: 992px) and (max-width: 1270px) {
+        .search {
             display: none;
         }
-        #section-scroll{
+
+        #section-scroll {
             padding-left: 20%;
         }
-        .Publication{
+
+        .Publication {
             width: 70%;
             margin-right: 5rem;
         }
     }
-        
-    
